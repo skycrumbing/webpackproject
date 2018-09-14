@@ -43,4 +43,16 @@ module.exports = {
 }
 ```
 * 打包文件
-在当前项目打开命令行，通过使用命令webpack进行打包
+在当前项目下打开命令行，通过使用命令webpack进行打包
+## package.json
+* scripts字段是一个对象:每个属性对应一段脚本命令  
+比如：
+```
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack"
+  },
+```
+start命令对应的脚本是webpack
+命令行下使用npm run start命令，就可以执行这段脚本，进行打包
+
